@@ -107,7 +107,8 @@ def load_content():
     elif '/channel/' in url or '/user/' in url:
         channel_name = get_channel_info(url)
         info_label.config(text=f"Channel Name: {channel_name}\n"
-                              f"Warning! Downloading all videos from a channel may take a long time.",
+                              f"Warning! Downloading all videos from a channel will take a long time.\n"
+                              f"Refer to your console to accurately check your download progress.",
                               bootstyle='default')
         create_resolution_buttons([], url, 'channel')
     else:

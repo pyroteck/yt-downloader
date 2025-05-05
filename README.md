@@ -12,6 +12,10 @@ Python script utilizing yt-dlp to download either an entire channel's videos, or
 
     - ```pip install yt-dlp```
 
+- ttkbootstrap
+
+    - ```pip install ttkbootstrap```
+
 - [ffmpeg](https://ffmpeg.org/)
 
     - Guide used to install ffmpeg and add to Windows PATH variables: https://phoenixnap.com/kb/ffmpeg-windows
@@ -31,15 +35,11 @@ Open a new window in incognito mode
 
 Open a second tab, go to YouTube, and sign into a YouTube account <u>**_THAT IS NOT YOUR MAIN ACCOUNT_**</u>. Avoid using cookies from your main account to avoid potentially getting banned on it.
 
-Close the YouTube tab and download all of your cookies to a text file titled `cookies.txt`
-
-Paste this file in the root directory of this project.
+Close the YouTube tab and download all of your cookies to a text file titled `cookies.txt`. This file can be stored in any directory.
 
 &nbsp;
 
 ### Running the Script
-
-
 
 In the root directory, run `download_vids.py`
 
@@ -47,8 +47,10 @@ In the root directory, run `download_vids.py`
 python download_vids.py
 ```
 
-Choose either "video" or "channel" to download
+Paste link to YouTube video or channel and click load. If downloading a channel's videos, link needs to be in format `youtube.com/channel/{channel ID}`
 
-Paste link to the video or YouTube channel.
+Optionally change directory to download videos to.
 
-The script will automatically download the videos in mp4 to a folder titled with the channel name and current time.
+Choose cookies file.
+
+Click download button. The script will automatically download the videos in mp4 to a folder titled with the channel name and current time.
